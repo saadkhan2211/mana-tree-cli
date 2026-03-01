@@ -1,0 +1,44 @@
+{
+  "name": "mana-tree",
+  "description": "CLI tool for generating and managing Mana-Tree projects with cloud sync support",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "keywords": [
+    "cli",
+    "project-generator",
+    "code-generator",
+    "developer-tool",
+    "scaffold",
+    "zip-generator",
+    "file-generator",
+    "mana-tree"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "mt": "dist/cli/index.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "axios": "^1.13.6",
+    "commander": "^14.0.3",
+    "conf": "^15.1.0",
+    "inquirer": "^13.3.0",
+    "ora": "^9.3.0",
+    "uuid": "^13.0.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/archiver": "^7.0.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
