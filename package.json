@@ -1,7 +1,7 @@
 {
   "name": "mana-tree",
   "description": "CLI tool for generating and managing Mana-Tree projects with cloud sync support",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "commonjs",
   "keywords": [
     "cli",

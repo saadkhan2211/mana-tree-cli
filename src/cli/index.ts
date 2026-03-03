@@ -9,7 +9,8 @@ import ora from "ora";
 import Conf from "conf";
 import { generateArchiveCore } from "../core/generateArchive.core";
 
-const API_BASE_URL = "http://localhost:4000/api";
+const API_BASE_URL =
+  process.env.URL || "https://mana-tree-server.onrender.com/";
 
 const program = new Command();
 const config = new Conf({ projectName: "mana-tree" });
