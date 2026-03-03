@@ -10,7 +10,7 @@ import Conf from "conf";
 import { generateArchiveCore } from "../core/generateArchive.core";
 
 const API_BASE_URL =
-  process.env.URL || "https://mana-tree-server.onrender.com/";
+  process.env.URL || "https://mana-tree-server.onrender.com/api";
 
 const program = new Command();
 const config = new Conf({ projectName: "mana-tree" });
